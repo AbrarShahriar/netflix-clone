@@ -9,8 +9,8 @@ function Banner() {
         return Math.floor(Math.random() * arrayOfMovies.length)
     }
 
-    const truncate = (str = '', n) => {
-        return str.split('%20').slice(0, n).join('%20') + '...' 
+    const truncate = (str, n) => {
+        return str?.split('%20').slice(0, n).join('%20') + '...' 
     }
 
     const [movie, setMovie] = useState([])
