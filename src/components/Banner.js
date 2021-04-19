@@ -10,7 +10,7 @@ function Banner() {
     }
 
     const truncate = (str, n) => {
-        return str?.split('%20').slice(0, n).join('%20') + '...' 
+        return str?.split(' ').slice(0, n).join(' ') + '...' 
     }
 
     const [movie, setMovie] = useState([])
@@ -20,6 +20,7 @@ function Banner() {
             try {
                 const res = await axios.get(requests.fetchNetflixOriginals)
                 const i = randomMovieIndex(res.data.results)
+                console.log(res.data.results[i])
                 setMovie(res.data.results[i])
             } catch (error) {
                 console.log(error);

@@ -20,7 +20,7 @@
 
 .row__poster {
     object-fit: contain;
-    /* width: 100%;t */
+    /* width: 100%; */
     margin-right: 10px;
     height: 100px;
     transition:  transform 450ms ease;
