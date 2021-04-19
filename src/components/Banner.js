@@ -9,9 +9,9 @@ function Banner() {
         return Math.floor(Math.random() * arrayOfMovies.length)
     }
 
-    const truncate = (str, n) => {
-        return str.split('%20').slice(0, n).join('%20') + '...' 
-    }
+    // const truncate = (str, n) => {
+    //     return str.split('%20').slice(0, n).join('%20') + '...' 
+    // }
 
     const [movie, setMovie] = useState([])
 
@@ -44,8 +44,8 @@ function Banner() {
                     <button className="banner__button">Play</button><button className="banner__button">My List</button>
                 </div>
 
-                <h1 className="banner__description">{truncate(movie?.overview, 15)}</h1>
-                {/* <h1 className="banner__description">{movie?.overview}</h1> */}
+                {/* <h1 className="banner__description">{truncate(movie?.overview, 15)}</h1> */}
+                <h1 className="banner__description">{movie?.overview}</h1>
             </div>
             
             <div className="banner--fadeBottom"></div>
