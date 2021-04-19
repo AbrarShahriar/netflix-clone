@@ -16,10 +16,10 @@ function App() {
 
       {/* Rows */}
       <Row title='netflix originals' fetchUrl={requests.fetchNetflixOriginals} isLargeRow/>
-      <Row title='trending now' fetchUrl={requests.fetchTrending} />
-      <Row title='top rated' fetchUrl={requests.fetchTopRated} />
-      <Row title='Romance movies' fetchUrl={requests.fetchRomanceMovies} />
-      <Row title='comedy movies' fetchUrl={requests.fetchComedyMovies} />
+      <Row title='trending now' fetchUrl={requests.fetchTrending} isLargeRow={false}/>
+      <Row title='top rated' fetchUrl={requests.fetchTopRated} isLargeRow={false}/>
+      <Row title='Romance movies' fetchUrl={requests.fetchRomanceMovies} isLargeRow={false}/>
+      <Row title='comedy movies' fetchUrl={requests.fetchComedyMovies} isLargeRow={false}/>
     </div>
   );
 }
