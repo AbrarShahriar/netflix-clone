@@ -10,7 +10,7 @@ function Banner() {
     }
 
     const truncate = (str, n) => {
-        return str.split(' ').slice(0, n).join(' ') + '...' 
+        return str.split('%20').slice(0, n).join('%20') + '...' 
     }
 
     const [movie, setMovie] = useState([])
